@@ -70,5 +70,5 @@ fun main(){
             println(x)
         }
     }
-    
+
 }
