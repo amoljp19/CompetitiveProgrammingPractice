@@ -46,6 +46,9 @@ Test case 44: You can load 88 mangoes at maximum. The total weight is 6\times 8+
 * */
 
 
+
+// imp - please read problem carefully as a mango used so consider one mango cost
+
 import java.util.*
 
 
