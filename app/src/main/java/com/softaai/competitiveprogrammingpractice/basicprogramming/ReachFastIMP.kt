@@ -53,6 +53,7 @@ Test case 44: Chef can use 1313 steps to decrease his coordinate by K = 2K=2 and
 
 
 import java.util.*
+import kotlin.math.abs
 
 fun main(){
 
@@ -66,6 +67,12 @@ fun main(){
         val y = scanner.nextInt()
         val k = scanner.nextInt()
 
-        println((y-x)/k)
+        if(x==y){
+            println(0)
+        }else if(abs(x-y) % k ==0){
+            println(abs(x-y) / k)
+        }else{
+            println(abs(x-y)/k + 1)
+        }
     }
 }
