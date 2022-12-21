@@ -69,3 +69,6 @@ fun findMissingNumber(n : Int, array: Array<Int>) : Int{
 
     return totalSum-missingSum
 }
+
+
+
