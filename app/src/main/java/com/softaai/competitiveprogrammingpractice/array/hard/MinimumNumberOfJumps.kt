@@ -102,25 +102,3 @@ fun findMinimumNumbersOfJumpsToEnd(array: Array<Int>): Int {
 }
 
 
-fun javaToKotlin(arr: Array<Int>): Int {
-
-    var count = 0
-    var current = 0
-    var max = 0
-
-    for (i in 0 until arr.size) {
-        max = Math.max(max, i + arr[i])
-        if (current >= arr.size - 1) {
-            break
-        } else if (max <= i) {
-            return -1
-        } else if (i == current) {
-            current = max
-            count++
-        }
-    }
-
-    return count
-
-
-}
